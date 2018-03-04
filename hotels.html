@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона [Поиск отелей]</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class=main-header-logo>
+          <img src="img/logo.svg" width="67" height="56" alt="Логотип Седона">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="content.html">Фото и видео</a></li>
+          <li><a href="map.html">Карта штата</a></li>
+          <li class="site-navigattion-current"><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+      <div class="promo"></div>
+    </header>
+    <main>
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр выбора гостиниц</h2>
+        <!-- Фильтр-->
+      </section>
+      <section class="sort">
+        <h2 class="visually-hidden">Сортировка по видам</h2>
+        <div class="sort-result">
+          <span class="sort-found">Найдено:3</span>
+          <span class="sort-item">Сортировка:</span>
+        </div>
+        <ul class="choice">
+          <li class="choice-item">
+            <a class="choice-item-price-active" href="#">По цене</a>
+          </li>
+          <li class="choice-item">
+            <a class="choice-item-type" href="#">По типу</a>
+          </li>
+          <li class="choice-item">
+            <a class="choice-item-rating" href="#">По рейтингу</a>
+          </li>
+        </ul>
+      </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">Каталог</h2>
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <h3 class="catalog-item-name">Arma Resort & SPA</h3>
+              <p class="catalog-item-image">
+                <img src="#" alt="Гостиница Amara Resort & SPA">
+              </p>
+              <p class="catalog-item-price">
+                <span>Гостиница</span>
+                <span>От 4000 Р.</span>
+              </p>
+              <p class="catalog-item-button">
+                <button class="catalog-item-more" >Подробнее</button>
+                <a class="catalog-item-reservation" href="#">Забронировать</a>
+                <span class="catalog-rating">Рейтинг:8,5</span>
+              </p>
+            </li>
+            <li class="catalog-item">
+              <h3 class="catalog-item-name">Desert qual inn</h3>
+              <p class="catalog-item-image">
+                <img src="#" alt="Гостиница Desert qual inn">
+              </p>
+              <p class="catalog-item-price">
+                <span>Мотель</span>
+                <span>От 3000 Р.</span>
+              </p>
+              <p class="catalog-item-button">
+                <button class="catalog-item-more">Подробнее</button>
+                <a class="catalog-item-reservation" href="#">Забронировать</a>
+                <span class="catalog-rating">Рейтинг:8,9</span>
+              </p>
+            </li>
+            <li class="catalog-item">
+              <h3 class="catalog-item-name">Villas at poco diablo</h3>
+              <p class="catalog-item-image">
+                <img src="#" alt="Villas at poco diablo">
+              </p>
+              <p class="catalog-item-price">
+                <span>Апартаменты</span>
+                <span>От 2000 Р.</span>
+              </p>
+              <p class="catalog-item-botton">
+                <button class="catalog-item-more">Подробнее</button>
+                <a class="catalog-item-reservation" href="#">Забронировать</a>
+                <span class="catalog-rating">Рейтинг:9,2</span>
+              </p>
+            </li>
+          </ul>
+          </section>
+    </main>
+
+    <footer class="main-footer">
+      <p class="footer-visit">#visitsedona</p>
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#">Twitter</a></li>
+          <li><a class="social-button" href="#">Facebook</a></li>
+          <li><a class="social-button" href="#">YouTube</a></li>
+        </ul>
+      </div>
+      <a class="developer" href="https://htmlacademy.ru/intensive/htmlcss">
+        <span class="developer-text">Website By</span>
+        <img src="img/htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
+      </a>
+    </footer>
+  </body>
