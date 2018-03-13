@@ -91,7 +91,30 @@
             и мы покажем вам лучшие предложения гостиницы в седоне
         </p>
         <button class="search-buttom">Поиск гостиницы в седоне</button>
-          <!-- Форма поиска гостиницы -->
+        <form class="search-form" acrion="#" method="post">
+          <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+          <p class="input-searh">
+          <label for="arrival-date">Дата заезда:</label>
+            <input id="arrival-date" type="text" name="arrival date" value="" placeholder="24 апреля 2017">
+          </p>
+          <p class="input-searh">
+            <label for="departure-date">Дата выезда:</label>
+            <input id="departure-date" type="text" name="departure date" value="" placeholder="4 июля 2017">
+          </p>
+          <p class="input-searh">
+            <label for="value-adult">Взрослые:</label>
+            <input class="button-minus" type="button" value="-">
+            <input id="value-adult" type="text" name="number of adults" value="" placeholder="2">
+            <input class="button-plus" type="button" value="+">
+          </p>
+          <p class="input-searh">
+            <label for="value-children">Дети:</label>
+            <input class="button-minus" type="button" value="-">
+            <input id="value-children" type="text" name="number of children" value="" placeholder="0">
+            <input class="button-plus" type="button" value="+">
+          </p>
+          <button class="button-search" type="submit">Найти</button>
+        </form>
       </section>
     </main>
 

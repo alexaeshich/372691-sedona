@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона [Поиск отелей]</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -21,7 +23,45 @@
     <main>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр выбора гостиниц</h2>
-        <!-- Фильтр-->
+        <form class="filters-form" action="" method="post">
+          <fieldfest>
+            <legend>Инфраструктура</legend>
+            <ul>
+              <li class="filter-option"><input class="filter-checkbox" type="checkbox" id="filter-pool" name="pool">Бассейн
+              </li>
+              <li class="filter-option"><input class="filter-checkbox" type="checkbox" id="filter-parking" name="parking">Парковка
+              </li>
+              <li class="filter-option"><input class="filter-checkbox" type="checkbox" id="filter-WiFi" name="Wireless Fidelity">Wi-Fi
+              </li>
+            </ul>
+            <legend>Тип жилья</legend>
+            <ul>
+              <li class="filter-option"><input class="filter-checkbox" type="checkbox" id="filter-hotel" name="hotel">Гостиница
+              </li>
+              <li class="filter-option"><input class="filter-checkbox" type="checkbox" id="filter-motel" name="motel">Парковка
+              </li>
+              <li class="filter-option"><input class="filter-checkbox" type="checkbox" id="filter-apartment" name="apartment">Wi-Fi
+              </li>
+            </ul>
+          </fieldfest>
+          <fieldfest>
+            <legend>Стоимость в сутки (Р)</legend>
+            <table class="price-table">
+                <tr class="option-price">
+                  <td>
+                    <label for="amount-min">от</label>
+                    <input type="text" class="price-min" id="amount-min" name="price-min" placeholder="0">
+                  </td>
+                  <td>
+                    <label for="amount-max">до</label>
+                    <input type="text" class="price-max" id="amount-max" name="price-max" placeholder="3000">
+                  </td>
+                </tr>
+            </table>
+            <input type="range" name="price range">
+            <button class="button-filters" type="submit">Показать</button>
+          </fieldfest>
+        </form>
       </section>
       <section class="sort">
         <h2 class="visually-hidden">Сортировка по видам</h2>
