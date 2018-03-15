@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона [Поиск отелей]</title>
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -16,7 +15,9 @@
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li class="site-navigation-current"><a href="hotels.html">Гостиницы</a></li>
+          <li class="site-navigation-current">
+            <a href="hotels.html">Гостиницы</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -25,36 +26,62 @@
         <h2 class="visually-hidden">Фильтр выбора гостиниц</h2>
         <form class="filters-form" action="" method="post">
           <fieldfest>
-            <legend>Инфраструктура</legend>
+            <legend>Инфраструктура:</legend>
             <ul>
-              <li class="filter-option"><input class="filter-checkbox" type="checkbox" id="filter-pool" name="pool">Бассейн
+              <li class="filter-option">
+                <label for="filter-pool">
+                  <input class="filter-checkbox" type="checkbox" id="filter-pool" name="pool">
+                  Бассейн
+                </label>
               </li>
-              <li class="filter-option"><input class="filter-checkbox" type="checkbox" id="filter-parking" name="parking">Парковка
+              <li class="filter-option">
+                <label for="filter-parking">
+                  <input class="filter-checkbox" type="checkbox" id="filter-parking" name="parking">
+                  Парковка
+                </label>
               </li>
-              <li class="filter-option"><input class="filter-checkbox" type="checkbox" id="filter-WiFi" name="Wireless Fidelity">Wi-Fi
+              <li class="filter-option">
+                <label for="filter-WiFi">
+                  <input class="filter-checkbox" type="checkbox" id="filter-WiFi" name="Wireless Fidelity">
+                  Wi-Fi
+                </label>
               </li>
             </ul>
-            <legend>Тип жилья</legend>
+            <legend>Тип жилья:</legend>
             <ul>
-              <li class="filter-option"><input class="filter-checkbox" type="checkbox" id="filter-hotel" name="hotel">Гостиница
+              <li class="filter-option">
+                <label for="filter-hotel">
+                  <input class="filter-checkbox" type="checkbox" id="filter-hotel" name="hotel">
+                  Гостиница
+                </label>
               </li>
-              <li class="filter-option"><input class="filter-checkbox" type="checkbox" id="filter-motel" name="motel">Парковка
+              <li class="filter-option">
+                <label for="filter-motel">
+                  <input class="filter-checkbox" type="checkbox" id="filter-motel" name="motel">
+                  Парковка
+                </label>
               </li>
-              <li class="filter-option"><input class="filter-checkbox" type="checkbox" id="filter-apartment" name="apartment">Wi-Fi
+              <li class="filter-option">
+                <label for="filter-apartment">
+                  <input class="filter-checkbox" type="checkbox" id="filter-apartment" name="apartment">
+                  Апартаменты
+                </label>
               </li>
             </ul>
           </fieldfest>
           <fieldfest>
-            <legend>Стоимость в сутки (Р)</legend>
+            <legend>Стоимость в сутки (Р):</legend>
             <table class="price-table">
                 <tr class="option-price">
                   <td>
-                    <label for="amount-min">от</label>
+                    <label for="amount-min">от
                     <input type="text" class="price-min" id="amount-min" name="price-min" placeholder="0">
+                    </label>
                   </td>
                   <td>
-                    <label for="amount-max">до</label>
+                    <label for="amount-max">до
                     <input type="text" class="price-max" id="amount-max" name="price-max" placeholder="3000">
+                    </label>
                   </td>
                 </tr>
             </table>

@@ -1,21 +1,4 @@
 
-@font-face {
-font-family: 'PT Sans';
-src:  url('fonts/ptsansbold.woff2') format('woff2'),
-      url('fonts/ptsansbold.woff') format('woff');
-font-weight: normal;
-font-style: bold;
-}
-@font-face {
-font-family: 'PT Sans';
-src:  url('fonts/ptsans.woff2') format('woff2'),
-      url('fonts/ptsans.woff') format('woff');
-font-weight: normal;
-font-style: normal;
-}
-
-/*<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">*/
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -25,8 +8,4 @@ font-style: normal;
   padding: 0;
   clip:rect(0 0 0 0);
   overflow: hidden;
-}
-
-body {
-  font-family: 'PT Sans','Arial', sans-serif;
 }
