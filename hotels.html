@@ -24,8 +24,8 @@
     <main>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр выбора гостиниц</h2>
-        <form class="filters-form" action="" method="post">
-          <fieldfest>
+        <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
             <legend>Инфраструктура:</legend>
             <ul>
               <li class="filter-option">
@@ -42,7 +42,7 @@
               </li>
               <li class="filter-option">
                 <label for="filter-WiFi">
-                  <input class="filter-checkbox" type="checkbox" id="filter-WiFi" name="Wireless Fidelity">
+                  <input class="filter-checkbox" type="checkbox" id="filter-WiFi" name="wireless Fidelity">
                   Wi-Fi
                 </label>
               </li>
@@ -68,26 +68,26 @@
                 </label>
               </li>
             </ul>
-          </fieldfest>
-          <fieldfest>
+          </fieldset>
+          <fieldset>
             <legend>Стоимость в сутки (Р):</legend>
             <table class="price-table">
                 <tr class="option-price">
                   <td>
                     <label for="amount-min">от
-                    <input type="text" class="price-min" id="amount-min" name="price-min" placeholder="0">
+                    <input type="text" class="price-min" id="amount-min" name="price_min" placeholder="0">
                     </label>
                   </td>
                   <td>
                     <label for="amount-max">до
-                    <input type="text" class="price-max" id="amount-max" name="price-max" placeholder="3000">
+                    <input type="text" class="price-max" id="amount-max" name="price_max" placeholder="3000">
                     </label>
                   </td>
                 </tr>
             </table>
-            <input type="range" name="price range">
+            <input type="range" name="price_range">
             <button class="button-filters" type="submit">Показать</button>
-          </fieldfest>
+          </fieldset>
         </form>
       </section>
       <section class="sort">
