@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона [Главная]</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
+        <a href="index.html" class="main-header-logo">
           <img src="img/logo-sedona.png" width="138" height="70" alt="Логотип Седона">
         </a>
         <ul class="site-navigation">
@@ -41,7 +42,7 @@
 
         <div class="features">
           <h2 class="visually-hidden">Преимущества</h2>
-          <ul>
+          <ul class="features-list">
             <li class="features-item">
               <h3>Жильё</h3>
               <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -65,7 +66,7 @@
         </div>
 
         <div class="about-next">
-          <ul>
+          <ul class="about-list">
             <li class="about-item-next">
               <h3 class="about-name-next">Небольшая площадь</h3>
               <span class="number">– №3 –</span>
@@ -90,24 +91,24 @@
         <p class="search-about">Укажите предполагаемые даты поездки,<br>
             и мы покажем вам лучшие предложения гостиницы в седоне
         </p>
-        <button class="search-buttom">Поиск гостиницы в седоне</button>
+        <button class="search-hotel-btn">Поиск гостиницы в седоне</button>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
           <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
           <p class="input-search">
             <label for="arrival-date">Дата заезда:</label>
             <input id="arrival-date" type="text" name="arrival" placeholder="24 апреля 2017" required>
           </p>
-          <p class="input-searсh">
+          <p class="input-search">
             <label for="departure-date">Дата выезда:</label>
             <input id="departure-date" type="text" name="departure" placeholder="4 июля 2017" required>
           </p>
-          <p class="input-searсh">
+          <p class="input-search">
             <label for="value-adult">Взрослые:</label>
             <input class="button-minus" type="button" value="-">
             <input id="value-adult" type="text" name="adults" placeholder="2" required>
             <input class="button-plus" type="button" value="+">
           </p>
-          <p class="input-searсh">
+          <p class="input-search">
             <label for="value-children">Дети:</label>
             <input class="button-minus" type="button" value="-">
             <input id="value-children" type="text" name="children" placeholder="0" required>
@@ -116,10 +117,16 @@
           <button class="button-search" type="submit">Найти</button>
         </form>
       </section>
+      <section class="map">
+        <h2 class="visually-hidden">Месторасположение на карте</h2>
+        <p>
+          <img src="img/map.jpg" width="1718" height="748" alt="город расположен по обе стороны границы между округами Коконино и Явапай в северной области Долины Верде штата Аризона">
+        </p>
+      </section>
     </main>
 
     <footer class="main-footer">
-      <p class="footer-visit">visitsedona</p>
+      <p class="footer-visit">#visitsedona</p>
       <div class="footer-social">
         <ul>
           <li><a class="social-button" href="#">Twitter</a></li>
