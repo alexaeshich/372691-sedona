@@ -26,10 +26,6 @@ body {
   background-color: #f2f2f2;
 }
 
-*:focus {
-outline: 5px solid #81b3d2;
-
-}
 .container {
   max-width: 1200px;
   min-width: 768px;
@@ -41,6 +37,7 @@ outline: 5px solid #81b3d2;
 /* Стили для всех ссылок*/
 a {
 text-decoration: none;
+outline: 0;
 }
 
 /* Стили для скрытых заголовков*/
@@ -395,14 +392,12 @@ text-align: center;
   line-height: 24px;
 }
 
-.btn {
+.search-hotel-btn {
   font-family: "PT Sans", "Georgia", sans-serif;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 700;
-}
 
-.search-hotel-btn {
   border: none;
   background-color: #766357;
   text-align: center;
@@ -414,6 +409,7 @@ text-align: center;
   margin: 0 auto;
   padding: 30px 30px;
   cursor: pointer;
+  outline: 0;
 
 }
 
@@ -557,6 +553,8 @@ animation-timing-function:ease-out;
   border: none;
   vertical-align: top;
   text-align: center;
+  outline: 0;
+
 }
 
 .box-adults button,
@@ -575,6 +573,7 @@ animation-timing-function:ease-out;
 .button-plus,
 .button-minus {
   color: #a9a9a9;
+  outline: 0;
 }
 
 .button-plus:hover,

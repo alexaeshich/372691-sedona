@@ -6,12 +6,13 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"></script>
     </head>
   <body>
     <div class="container">
       <header class="main-header">
         <nav class="main-navigation">
-          <a href="#" class="main-header-logo">
+          <a class="main-header-logo">
             <img src="img/logo-sedona.png" width="138" height="70" alt="Логотип Седона">
           </a>
           <ul class="site-navigation">
@@ -167,12 +168,12 @@
         </div>
       </footer>
     </div>
-    <script>
+    <!-- <script>
 
       var link = document.querySelector(".search-hotel-btn");
       var popup = document.querySelector(".search-wrapper");
 
-      popup.classList.add('search-wrapper-on');
+      popup.classList.add("search-wrapper-on");
       link.addEventListener('click',function(event){event.preventDefault();
 
         if (popup.classList.contains('search-wrapper-on')) {
@@ -191,6 +192,6 @@
           if(event.keyCode===27){
             if(popup.classList.contains('search-wrapper-off')){popup.classList.remove('search-wrapper-off')}}});
 
-    </script>
+    </script> -->
   </body>
 </html>
