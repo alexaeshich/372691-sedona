@@ -6,7 +6,7 @@
 
     if (popup.classList.contains("search-wrapper-on")) {
             popup.classList.add("search-wrapper-off");
-            popup.classList.remove('search-wrapper-on')
+            popup.classList.remove("search-wrapper-on")
   }
 
     else if

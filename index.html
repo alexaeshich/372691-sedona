@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/script.js"></script>
     </head>
   <body>
     <div class="container">
@@ -16,7 +15,7 @@
             <img src="img/logo-sedona.png" width="138" height="70" alt="Логотип Седона">
           </a>
           <ul class="site-navigation">
-            <li><a href="index.html">Информация</a></li>
+            <li><a href="#">Информация</a></li>
             <li><a href="#">Фото и видео</a></li>
             <li><a href="#">Карта штата</a></li>
             <li><a href="hotels.html">Гостиницы</a></li>
@@ -40,7 +39,7 @@
             <div class="about-item-photo01"></div>
             <div class="about-text">
               <h3>Настоящий городок</h3>
-              <span class="number">– №1 –</span>
+              <span>— №1 —</span>
               <p>Седона – не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
           </div>
@@ -67,7 +66,7 @@
             <div class="about-item-photo02"></div>
             <div class="about-text">
               <h3>Там есть<br> мост дьявола</h3>
-              <span class="number">– №2 –</span>
+              <span class="number">— №2 —</span>
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
           </div>
@@ -99,32 +98,35 @@
             <p>Укажите предполагаемые даты поездки,<br>
               и мы покажем вам лучшие предложения гостиниц в седоне
             </p>
-            <button class="btn search-hotel-btn">Поиск гостиницы в седоне</button>
+            <button class="search-hotel-btn">Поиск гостиницы в седоне</button>
           </div>
           <div class="search-wrapper">
+            <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-              <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-
+              <div class="search-item">
                 <label for="arrival-date">Дата заезда:</label>
                 <input id="arrival-date" type="text" name="arrival" class="form-date" placeholder="24 апреля 2017" required>
-
-
+                <button class="calendar" type="button"></button>
+              </div>
+              <div class="search-item">
                 <label for="departure-date">Дата выезда:</label>
                 <input id="departure-date" type="text" name="departure" class="form-date" placeholder="4 июля 2017" required>
-
-                <label for="value-adult">Взрослые:</label>
-                <div class="box-adults">
-                <button class="button-minus" type="button">-</button>
-                <input id="value-adult" type="text" name="adults" placeholder="2" required>
-                <button class="button-plus" type="button">+</button>
+                <button class="calendar"></button>
+              </div>
+              <div class="search-item">
+                <div class="search-item-box-first">
+                  <label for="value-adult">Взрослые:</label>
+                  <button class="button-minus" type="button">-</button>
+                  <input id="value-adult" type="text" name="adults" placeholder="2" required>
+                  <button class="button-plus" type="button">+</button>
                 </div>
-
-                <label for="value-children">Дети:</label>
-                <div class="box-children">
-                <button class="button-minus" type="button">-</button>
-                <input id="value-children" type="text" name="children" placeholder="0" required>
-                <button class="button-plus" type="button">+</button>
+                <div class="search-item-box-second">
+                  <label for="value-children">Дети:</label>
+                  <button class="button-minus" type="button">-</button>
+                  <input id="value-children" type="text" name="children" placeholder="0" required>
+                  <button class="button-plus" type="button">+</button>
                 </div>
+              </div>
               <button class="button-search" type="submit">Найти</button>
             </form>
         </div>
@@ -142,7 +144,7 @@
               <li>
                 <a class="social-button" href="#">
                   <span class="visually-hidden">Twitter</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewbox="0 0 17 15"><path fill="#ffffff" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewbox="0 0 17 15"><path fill="#ffffff" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/>
                   </svg>
                 </a>
               </li>
@@ -156,7 +158,7 @@
               <li>
                 <a class="social-button" href="#">
                   <span class="visually-hidden">YouTube</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewbox="0 0 20 16"><path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewbox="0 0 20 16"><path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg>
                 </a>
               </li>
             </ul>
@@ -168,5 +170,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
