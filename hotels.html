@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона [Поиск отелей]</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/minify-normalize.css">
+    <link rel="stylesheet" href="css/minify-style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body class="inner-page">
@@ -33,7 +33,7 @@
                 <legend>Инфраструктура:</legend>
                 <ul>
                   <li class="filter-option">
-                    <input class="visually-hidden filter-input-checkbox" type="checkbox" id="filter-pool" name="pool" disabled>
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" id="filter-pool" name="pool">
                     <label for="filter-pool">Бассейн</label>
                   </li>
                   <li class="filter-option">
@@ -50,7 +50,7 @@
                 <legend>Тип жилья:</legend>
                 <ul>
                   <li class="filter-option">
-                    <input class="visually-hidden filter-input-checkbox" type="checkbox" id="filter-hotel" name="hotel" checked disabled>
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" id="filter-hotel" name="hotel">
                     <label for="filter-hotel">Гостиница</label>
                   </li>
                   <li class="filter-option">
@@ -103,10 +103,10 @@
               Сортировка:
             </li>
             <li class="choice-item">
-              <a class="choice-item-price-active" href="#">По цене</a>
+              <a class="choice-item-price-active" href="#" active>По цене</a>
             </li>
             <li class="choice-item">
-              <a class="choice-item-type" href="#" visited>По типу</a>
+              <a class="choice-item-type" href="#">По типу</a>
             </li>
             <li class="choice-item">
               <a class="choice-item-rating" href="#">По рейтингу</a>
@@ -114,7 +114,7 @@
           </ul>
           <div class="control-dir">
             <a class="control-dir-up"></a>
-            <a class="control-dir-down"></a>
+            <a class="control-dir-down-active"></a>
           </div>
         </section>
         <section class="catalog">
