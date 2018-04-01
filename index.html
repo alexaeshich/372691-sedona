@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/minify-normalize.css">
     <link rel="stylesheet" href="css/minify-style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+  </head>
   <body>
     <div class="container">
       <header class="main-header">
@@ -93,29 +93,29 @@
             </p>
             <button class="search-hotel-btn">Поиск гостиницы в седоне</button>
           </div>
-          <div class="search-wrapper">
+          <div class="search-wrapper search-wrapper-off-dis">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
               <div class="search-item">
                 <label for="arrival-date">Дата заезда:</label>
-                <input id="arrival-date" type="text" name="arrival" class="form-date" placeholder="24 апреля 2017" required>
+                <input id="arrival-date" type="text" name="arrival" class="form-date" placeholder="24 апреля 2017">
                 <button class="calendar" type="button"></button>
               </div>
               <div class="search-item">
                 <label for="departure-date">Дата выезда:</label>
-                <input id="departure-date" type="text" name="departure" class="form-date" placeholder="4 июля 2017" required>
+                <input id="departure-date" type="text" name="departure" class="form-date" placeholder="4 июля 2017">
                 <button class="calendar" type="button"></button>
               </div>
               <div class="search-item">
                 <div class="search-item-box-first">
                   <label for="value-adult">Взрослые:</label>
                   <button class="button-minus" type="button">-</button>
-                  <input id="value-adult" type="text" name="adults" placeholder="2" required>
+                  <input id="value-adult" type="number" name="adults" placeholder="2">
                   <button class="button-plus" type="button">+</button>
                 </div>
                 <div class="search-item-box-second">
                   <label for="value-children">Дети:</label>
                   <button class="button-minus" type="button">-</button>
-                  <input id="value-children" type="text" name="children" placeholder="0" required>
+                  <input id="value-children" type="number" name="children" placeholder="0">
                   <button class="button-plus" type="button">+</button>
                 </div>
               </div>

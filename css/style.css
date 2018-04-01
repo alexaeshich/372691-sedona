@@ -1,17 +1,17 @@
 @font-face {
-  font-family: 'PT Sans';
-  src:  url('../fonts/ptsansbold.woff2') format('woff2'),
+ font-family: 'PT Sans';
+ src:  url('../fonts/ptsansbold.woff2') format('woff2'),
        url('../fonts/ptsansbold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
+ font-weight: 700;
+ font-style: normal;
 }
 
 @font-face {
-  font-family: 'PT Sans';
-  src:  url('../fonts/ptsans.woff2') format('woff2'),
-       url('../fonts/ptsans.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
+ font-family: 'PT Sans';
+ src: url('../fonts/ptsans.woff2') format('woff2'),
+      url('../fonts/ptsans.woff') format('woff');
+ font-weight: 400;
+ font-style: normal;
 }
 
 body {
@@ -467,6 +467,13 @@ a {
  box-shadow: 0 7px 15px rgba(0,0,0,0.15);
 }
 
+/* анимация pop-up */
+.search-wrapper-on {
+ -webkit-animation: show_on 0.6s;
+ animation: show_on 0.6s;
+ -webkit-animation-timing-function:ease-out;
+ animation-timing-function:ease-out;
+}
 
 .search-wrapper-off {
  -webkit-animation: show_off 0.6s;
@@ -476,15 +483,11 @@ a {
 }
 
 .search-wrapper-off-dis {
-   display: none;
+ display: none;
 }
 
-/* анимация pop-up */
-.search-wrapper-on {
- -webkit-animation: show_on 0.6s;
- animation: show_on 0.6s;
- -webkit-animation-timing-function:ease-out;
- animation-timing-function:ease-out;
+.search-wrapper-error {
+ animation: shake 0.6s;
 }
 
 @-webkit-keyframes show_on {
@@ -501,6 +504,19 @@ a {
  }
 }
 
+@-webkit-keyframes show_on {
+ 0% {
+   -webkit-transform: translateY(-89px);
+   transform: translateY(-89px);
+   opacity: 0;
+ }
+
+ 100% {
+   -webkit-transform: translateY(0);
+   transform: translateY(0);
+   opacity: 1;
+ }
+}
 @keyframes show_on {
  0% {
    -webkit-transform: translateY(-89px);
@@ -541,6 +557,28 @@ a {
    transform: translateY(-89px);
    opacity: 0;
  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
 /* конец анимация pop-up */
 
@@ -1350,7 +1388,7 @@ input[type="checkbox"].visually-hidden {
 
 .item-link:hover,
 .item-link:focus {
-  outline: 0;
+ outline: 0;
  color: #81b3d2;
  cursor: pointer;
 }
