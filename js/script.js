@@ -17,6 +17,7 @@
     isStorageSupport = false;
 }
 
+  popup.classList.add("search-wrapper-off-dis");
   link.addEventListener('click',function(event){event.preventDefault();
 
     if (popup.classList.contains("search-wrapper-off-dis")) {
